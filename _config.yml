@@ -16,7 +16,7 @@
 title: The boring CS Blog
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my personal site. Enjoy!
+  A guy trying to simplify the boring things taught in computer science classes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: toborochi98

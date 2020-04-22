@@ -1,132 +1,130 @@
-> NOTE! Kiko-plus theme will not be update anymore. Please see the new and easier version, [kiko-now](https://github.com/AWEEKJ/kiko-now) theme which is mixed [jekyll-now](https://github.com/barryclark/jekyll-now) and Kiko-plus.
+# texture
 
-# Kiko Plus Theme
+A configurable jekyll theme for simply beautiful blogs.
 
-![image](/images/image.png)
+**Demo**: [thelehhman.com/texture](https://thelehhman.com/texture)
 
-You can see live demo [here](https://aweekj.github.io/Kiko-plus). This theme is inspired by [Kiko](http://github.com/gfjaru/Kiko) theme.
-
-## Features
-
-- Disqus comment system
-- Google analytics
-- Pagination support
-- Custom tags
-- SEO support
+![texture theme preview](/screen1.png)
 
 
+## Installation on Github Pages
+
+Add this line to your site's `_config.yml`:
+```yaml
+remote_theme: thelehhman/texture
+```
+
+**NOTE: If you are forking this repo, remove `base_url: /texture` in the `_config.yml` which is required to load the required website assets**
 ## Installation
 
-#### Method 1: new master's repository (The Best)
+Add this line to your Jekyll site's `Gemfile`:
 
-1. First [fork](https://github.com/AWEEKJ/Kiko-plus/fork) it.
-2. Change your forked repository name _Kiko-plus_ to __USERNAME.github.io__ where __USERNAME__ is your github username.
-3. Access your new blog via [https://username.github.io](https://username.github.io).
-4. [See configuration](#configuration).
-
-#### Method 2: gh-pages in existing repository
-
-1. Create a new branch called _gh-pages_ in the repository where you want to add a template [managing branches](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/).
-2. From command line run `git clone https://github.com/AWEEKJ/Kiko-plus.git` - this will clone _Kiko-plus_ template to your computer.
-3. Create new branch `git checkout -b gh-pages` where _gh-pages_ will be your branch name.
-4. Add remote, which is your repo from the first step, to your new branch `git remote add gh-pages https://github.com/<yourName>/<yourMaster>/gh-pages`. _yourName_ is your account name and _yourMaster_ is your repository.
-5. Push new branch to remote `git push gh-pages`.
-6. Update `_config.yml` file by changing `baseurl: "<branchName>"` _branchName_ is your branch name where _gh-pages_ resides. See [configuration](#configuration).
-
-## Configuration
-
-All configuration is done via `_config.yml` file which you will find in your main repo folder. Change this `<something>` to yours.
-
-### Basic
-
-- Config your blog name.
-
-```yml
-name: <blog-name>
+```ruby
+gem "texture"
 ```
 
-- These configuration in `author:` is for links to icons in footer. If you want to add more link icons, modify `_includes/footer.html` file.
+And add this line to your Jekyll site's `_config.yml`:
 
-```yml
-author:
-  facebook:         your-id
-  twitter:          your-id
-  github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
+```yaml
+theme: texture
 ```
 
-- Change copyright year and name in footer.
+And then execute:
 
-```yml
-copyright:
-  year:             2017
-  name:             Kiko
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install texture
+
+## Usage
+
+The "texture" key in _config.yml is used to customize the theme data.
+```yaml
+texture:
+  title: Adam Denisov
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: thelehhman
+    github:  thelehhman
+    linkedIn: in/thelehhman # format: locale/username
 ```
 
-### Google analytics
+**Styling**
 
-- Change this to your Google Analytic ID.
+Multiple header styles are supported using the "style" property under texture in `_config.yml`.
 
-```yml
-google-analytics:
-  id:               "your-id"
+```yaml
+texture:
+  style: [yellow|red|black|blue|green|purple]
 ```
 
-### Disqus
+For example, the blue style looks like this:
 
-- Change this to your Disqus short name.
+![texture theme blue](/screen2.png)
 
-```yml
-disqus:
-  id:               "your-id"
+
+**Texture Picker**
+
+You can toggle the texture picker to show/experiment various textures on your site using the showPicker variable. Remember to make it `false` for production.
+
+```yaml
+texture:
+  showPicker: [false|true] # show the texture selector(development purposes)
 ```
 
-### URL
+**Comments (Disqus)**
 
-- Config your domain.
-
-```yml
-url: "https://<your-name>.github.io"
+Comments on posts can be enabled by specifying your disqus_shortname under texture in `_config.yml`. For example,
+```yaml
+texture:
+  disqus_shortname: games
 ```
 
-- **NOTE** When if running locally, change url to 
+**Google Analytics**
 
-```yml
-url: "https://localhost:4000"
+It can be enabled by specifying your analytics id under texture in `_config.yml`
+```yaml
+texture:
+  analytics_id: '< YOUR ID >'
 ```
 
-- Change this to your branch name where _gh-pages_ resides. 
-- **NOTE** apply only if you used __Method 2__ for installation.
+**Excerpts**
 
-```yml
-baseurl: "/<branch-name>"
+Excerpts can be enabled by adding the following line to your `_config.yml`
+```yaml
+show_excerpts: true
 ```
 
-## Run in Local
+**Toggle Navbar**
 
-1. Download or clone your remote repository.
-2. Go inside folder. First, run `rake geminstall`. 
-3. Second, run `jekyll serve` or `rake preview`. This will build a website which you can access [https://localhost:4000](https://localhost:4000). Make sure that `url` in `_config.yml` file is `url: "https://localhost:4000"`. You need to have [Jekyll](https://jekyllrb.com/docs/installation/) installed to do this.
-
-## Rakefile Usage
-
-```bash
-# Create new post
-$ rake post title="A Title" [date="2015-08-16"] [tags="[tag1, tag2]"] 
-
-# Create new draft post
-$ rake draft title="A Title" [date="2015-08-16"] [tags="[tag1, tag2]"]
-
-# Install Jekyll Plugins. Do before running in local.
-$ rake geminstall
-
-# Run in Local
-$ rake preview
+```yaml
+texture:
+  showNav: true
 ```
+
+**Layouts**
+
+- Home
+- Page
+- Post
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/thelehhman/texture. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `texture.gemspec` accordingly.
 
 ## License
 
-This theme is released under MIT License.
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+

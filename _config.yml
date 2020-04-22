@@ -1,43 +1,26 @@
-title: Texture Theme
-author: GitHub User
-email: your-email@domain.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-show_excerpts: true # set to true to show excerpts on the homepage
-baseurl: /texture
+# Site settings
+title: "Paper Jekyll Theme"
+description: > 
+  Write a description of your website here.
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
+author: Johnny Appleseed
+email: johnny@appleseed.com
+twitter_username: _HairForceOne
+github_username: mkchoi212
 
-permalink: /posts/:title/
-texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
-  style: black
-  showNav: false
-  showPicker: true
+baseurl: "/paper-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "https://deadbeef.me" # the base hostname & protocol for your site
 
-  # generate social links in footer
-  social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
-    rss: rss
- 
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+google_analytics_id: UA-1111111111-1
+disqus_id:
 
 # Build settings
-# theme: texture
+include: [_pages]
+markdown: kramdown
+permalink: /:year/:month/:title.html
 
-plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+sass:
+    style: compressed
+
+exclude: [vendor]
+

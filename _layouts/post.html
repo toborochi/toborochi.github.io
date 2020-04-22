@@ -1,40 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  {%- include head.html -%}
-</head>
-<body>
-  <header class="texture-{{ site.texture.style }}">
-    <div class="container">
-      {%- include nav.html -%}
-    </div>
-    {%- include post_header.html -%}  
+---
+layout: page
+---
+<article class="c-article">
+  <header class="c-article__header">
+    <h1 class="c-article__title">{{ page.title }}</h1>
+    <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
   </header>
-  <main>
-    <div class="container">
-      <div class="post-container">
-          {{ content }}
-      </div>
-
-        <!-- Configure Disqus -->
-      {%- if site.texture.disqus_shortname -%}
-        <div id="disqus_thread" style="margin-top:25px"></div>
-        <script>
-          var disqus_config = function () {
-            this.page.url = '{{ page.url | absolute_url }}';
-            this.page.identifier = '{{ page.url | absolute_url }}';
-          };
-          (function() {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://{{ site.texture.disqus_shortname }}.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      {%- endif -%}
+  <!-- Post Tags -->
+  <ul class="c-tags">
+    {% for tag in page.tags %}
+    <li class="c-tag">{{ tag }}</li>
+    {% endfor %}
+  </ul>
+  <div class="c-article__main">
+    {{ content }}
+  </div>
+  <!-- Previous / Next Buttons -->
+  <div class="pagenav">
+    {% if page.previous.url %}
+    <div class="wrapper" id="left">
+      <small><b>Previous</b> {{page.previous.date | date: "%b %-d, %Y"}}</small>
+      <br>
+      <a class="no-hov" href="{{ page.previous.url | prepend: site.baseurl }}">&laquo; {{page.previous.title}}</a>
     </div>
-  </main>
-  {%- include footer.html -%}
-</body>
-</html>
+    {% endif %}
+    {% if page.next.url %}
+    <div class="wrapper" id="right">
+      <small>{{page.next.date | date: "%b %-d, %Y"}} <b>Next</b></small>
+      <br>
+      <a class="no-hov" href="{{ page.next.url | prepend: site.baseurl }}">{{page.next.title}} &raquo;</a>
+    </div>
+    {% endif %}
+  </div>
+  <!-- Disqus comments view -->
+  {% if page.comments != false and site.disqus_id %}
+  <div class="post-disqus">
+    <section id="disqus_thread"></section>
+    {% include disqus.html %}
+  </div>
+  {% endif %}
+</article>

@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 
-Introduce yourself here... so people will know who you are and what you do.. blah..blah..blah..
+Hi, I am Leonardo, a Informatic Engineering student at the Faculty of Engineering in Computer Science and Telecommunications, at the [Gabriel Rene Moreno Autonomous University](https://www.uagrm.edu.bo).

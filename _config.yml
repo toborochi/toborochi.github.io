@@ -1,26 +1,39 @@
 # Site settings
-title: "Paper Jekyll Theme"
-description: > 
-  Write a description of your website here.
-
-author: Johnny Appleseed
-email: johnny@appleseed.com
-twitter_username: _HairForceOne
-github_username: mkchoi212
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://toborochi.github.io" # the base hostname & protocol for your site
-
-google_analytics_id: UA-1111111111-1
-disqus_id:
+title: Monochrome | A minimal, responsive Jekyll blog theme
+description: "A minimal, responsive, ready to use blog template, built with Jekyll."
+url: "https://toborochi.github.io/"
+author:
+  name: "The Review Index"
+  email: "dyutibarma@gmail.com"
+  url: "https://toborochi.github.io/"
 
 # Build settings
-include: [_pages]
+baseurl: /monochrome # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
-permalink: /:year/:month/:title.html
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
 
-sass:
-    style: compressed
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
-exclude: [vendor]
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
 
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false

@@ -1,5 +1,10 @@
 _site
+_site/*
 .sass-cache
-Gemfile.lock
-_drafts
-.jsbeautifyrc
+.sass-cache/*
+.idea
+.idea/*
+.DS_Store
+.DS_Store/*
+.jekyll-metadata
+.jekyll-metadata/*

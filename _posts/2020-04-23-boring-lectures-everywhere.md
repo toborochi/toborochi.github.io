@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About this Blog
+title: Boring lectures everywhere
 comment: false
 ---
 

@@ -1,31 +1,21 @@
 # Site settings
-title: Your site
-description: >
-    Your description
-author: Your name
-email: your@e.mail
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://toborochi.github.io" # the base hostname & protocol for your site
-twitter_username: YourTwitter
-github_username:  YourGitHub
-
-disqus_shortname: YourDisqusShortname
+title: "TextLog"
+description: "Minimalist Jekyll theme for documentation site"
+baseurl: "" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
+url: "https://toborochi.github.io/"
+author: "John Doe"
 
 # Build settings
-include: [_pages]
-markdown: kramdown
-permalink: /:year/:month/:title
-sass:
-    style: compressed
+kramdown:
+  input: GFM
+permalink: pretty
 
-gems:
-  - jemoji
+# Third-party services
+# just leave empty to disable it
+google_analytics:
+disqus_shortname: 
+
+plugins:
   - jekyll-sitemap
-# - amp-jekyll # Acceletrated Mobile Pages
 
-# AMP Settings
-# ampdir: amp/
-# enable_amp: true
-
-# Google Analytics
-# google_analytics: UA-XXXXXXXX-X
+exclude: ["LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script"]

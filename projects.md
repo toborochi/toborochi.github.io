@@ -22,7 +22,8 @@ title: Projects
                 <h3>What a Beautiful Day to Die</h3>
                 <p>You are Lt. Holt Power, the pinnacle of androids evolution. It is the year 20XX and a nuclear war can start at any time. Can you bear this responsibility?</p>
                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-     </div>
+				<button type="button" class="btn btn-primary btn-lg sharp">Sharp</button>
+	 </div>
 </div>
 
 <hr>

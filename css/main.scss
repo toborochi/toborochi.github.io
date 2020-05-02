@@ -24,13 +24,13 @@ $grey-color-light: lighten($grey-color, 25%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$on-palm:          800px;
+$on-palm:          600px;
 $on-:              800px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
-//         padding-right: $spacing-unit / 2;
+//         padding-right: $spacing-unit;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }

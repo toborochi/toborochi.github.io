@@ -26,5 +26,20 @@ title: Projects
 </div>
 
 
+<div class="row">
+	<div class="col-lg-7 col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/500x300" alt="">
+                </a>
+    </div>
+
+            <div class="col-lg-5 col-md-5">
+                <h3>The Last 1</h3>
+                <p>1 Minute, 1 Gun. 1 Bullet. You have to be the last one.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+     </div>
+</div>
+
+
 # Programs	
 

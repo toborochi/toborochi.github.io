@@ -14,7 +14,7 @@ title: Projects
 <div class="row">
 	<div class="col-lg-7 col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x300" alt="">
+                    <img class="img-responsive" src="http://placehold.it/500x300" alt="">
                 </a>
     </div>
 

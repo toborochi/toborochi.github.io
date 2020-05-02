@@ -25,6 +25,7 @@ title: Projects
      </div>
 </div>
 
+<hr>
 
 <div class="row">
 	<div class="col-lg-7 col-md-7">

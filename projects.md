@@ -37,7 +37,7 @@ title: Projects
             <div class="col-lg-5 col-md-5">
                 <h3>The Last 1</h3>
                 <p>1 Minute, 1 Gun. 1 Bullet. You have to be the last one.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <button type="button" class="btn btn-primary btn-sm sharp">View</button>
      </div>
 </div>
 

@@ -16,7 +16,7 @@ title: Projects
                     <img src="http://placehold.it/600x600" alt="Image Alt Text" />
                 </div>
                 <div class="li-text">
-                    <h4 class="li-head">Title of Content</h4>
+                    <h4 class="li-head">What a Beautiful Day to Die</h4>
                     <p class="li-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tellus velit, ut semper neque.</p>
                     <p class="li-action">Read More</p>
                 </div>
@@ -83,7 +83,7 @@ title: Projects
             </a>
         </li>
     </ul>
-	<spacer type="vertical" width="100" height="100" >  </spacer>
+	
 </div>
 
 

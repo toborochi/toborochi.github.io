@@ -84,7 +84,8 @@ title: Projects
         </li>
     </ul>
 </div>
-<br>
+
+<spacer type="vertical" width="100" height="100" >  </spacer>
 
 # Programs	
 

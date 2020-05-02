@@ -21,7 +21,7 @@ title: Projects
             <div class="col-lg-5 col-md-5">
                 <h3>Project One</h3>
                 <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                <p>This is a very simple game dude.</p>
                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
      </div>
 </div>

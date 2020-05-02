@@ -2,7 +2,7 @@
 title: "The boring CS Blog"
 description: "A guy that is trying to make computer science a little more fun."
 baseurl: "" 
-url: "https://toborochi.github.io/"
+url: "https://toborochi.github.io"
 author: "Leonardo Añez Vladimirovna"
 
 # Build settings

@@ -57,6 +57,22 @@ title: Projects
      </div>
 </div>
 
+<hr>
+
+<div class="row">
+	<div class="col-lg-7 col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/500x300" alt="">
+                </a>
+    </div>
+
+            <div class="col-lg-5 col-md-5">
+                <h3>A little GUY</h3>
+                <p>Do not you feel small sometimes...?</p>
+                <button type="button" class="btn btn-primary btn-sm sharp">View</button>
+     </div>
+</div>
+
 
 # Programs	
 

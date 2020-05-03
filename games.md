@@ -49,7 +49,7 @@ These are some games that I made throughout my life.
 <div class="row">
 	<div class="col-lg-7 col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/500x300" alt="">
+                    <img class="img-responsive" src="https://i.imgur.com/CFNRMSx.png" alt="">
                 </a>
     </div>
 
@@ -65,7 +65,7 @@ These are some games that I made throughout my life.
 <div class="row">
 	<div class="col-lg-7 col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/500x300" alt="">
+                    <img class="img-responsive" src="https://i.imgur.com/bicZGm6.png" alt="">
                 </a>
     </div>
 

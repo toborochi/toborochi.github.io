@@ -5,6 +5,7 @@ title: Games
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <link rel="stylesheet" href="https://toborochi.github.io/css/list.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 These are some games that I made throughout my life.
 
@@ -22,7 +23,7 @@ These are some games that I made throughout my life.
             <div class="col-lg-5 col-md-5">
                 <h3>Fast Food Fighters</h3>
                 <p>The game presents us with a very unique group of Farm Animals that, tired of the abuse of the big chains of Fast Food, decide to oppose them.</p>
-				<button type="button" class="btn btn-secondary active sharp"><b>View</b></button>
+				<button type="button" class="btn btn-secondary active sharp"><i class="fa fa-steam"></i></button>
 	 </div>
 </div>
 

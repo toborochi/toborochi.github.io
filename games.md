@@ -10,6 +10,8 @@ These are some games that I made throughout my life.
 
 # Commercial Games
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <div class="row">
 	<div class="col-lg-7 col-md-7">
                 <a href="#">
@@ -26,12 +28,12 @@ These are some games that I made throughout my life.
 
 # Personal
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
 <div class="row">
 	<div class="col-lg-7 col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/500x300" alt="">
+                    <img class="img-responsive" src="https://i.imgur.com/tPZhyuW.png" alt="">
                 </a>
     </div>
 

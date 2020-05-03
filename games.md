@@ -24,6 +24,7 @@ These are some games that I made throughout my life.
                 <h3>Fast Food Fighters</h3>
                 <p>The game presents us with a very unique group of Farm Animals that, tired of the abuse of the big chains of Fast Food, decide to oppose them.</p>
 				<button type="button" class="btn btn-secondary active sharp"><i class="fa fa-steam"></i></button>
+				<button type="button" class="btn btn-secondary active sharp"><img src="https://img.icons8.com/material/24/FFFFFF/game-jolt.png"/></button>
 	 </div>
 </div>
 
